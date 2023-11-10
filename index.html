@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Carrousel de Logos Lavnet</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Empêche le défilement de la page */
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .carousel {
+    display: flex;
+    animation: scroll 60s linear infinite; /* Animation en boucle */
+  }
+  .carousel img {
+    height: 100px;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="carousel">
+  <img src="http://www.lavnet.fr/logo%20client/bati-concept.jpg" alt="Bati Concept" />
+  <img src="http://www.lavnet.fr/logo%20client/thumb_campanile.jpg" alt="Campanile" />
+  <img src="http://www.lavnet.fr/logo%20client/cci.jpg" alt="CCI" />
+  <img src="http://www.lavnet.fr/logo%20client/cer.png" alt="CER" />
+  <img src="http://www.lavnet.fr/logo%20client/districolor.jpg" alt="Districolor" />
+  <img src="http://www.lavnet.fr/logo%20client/GROUPE_ACTUAL_RVB.jpg" alt="Groupe Actual" />
+  <img src="http://www.lavnet.fr/logo%20client/immodefrance.jpg" alt="Immo de France" />
+  <img src="http://www.lavnet.fr/logo%20client/del_arte.jpg" alt="Del Arte" />
+  <img src="http://www.lavnet.fr/logo%20client/mobalpa2.jpg" alt="Mobalpa" />
+</div>
+</body>
+</html>
